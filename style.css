@@ -1,6 +1,4 @@
-/* ==========================================================================
-   1. GENERAL RESET & BASE STYLES
-   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,9 +16,7 @@ body {
     line-height: 1.6;
 }
 
-/* ==========================================================================
-   2. NAVBAR SECTION
-   ========================================================================== */
+/* NAVBAR  */
 .custom-navbar {
     width: 100%;
     padding: 12px 0;
@@ -76,9 +72,7 @@ body {
     color: #0056b3;
 }
 
-/* ==========================================================================
-   3. HERO SECTION
-   ========================================================================== */
+/* HERO SECTION */
 .hero-full-width {
     width: 100%;
     background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
@@ -223,9 +217,7 @@ body {
     transform: translateY(-5px) scale(1.02);
 }
 
-/* ==========================================================================
-   4. MAIN CONTAINER & CARD STYLES
-   ========================================================================== */
+/*  MAIN CONTAINER */
 .main-container {
     max-width: 1200px;
     margin: 40px auto;
@@ -261,9 +253,7 @@ body {
     padding-left: 20px;
 }
 
-/* ==========================================================================
-   5. TIMELINE (EXPERIENCE & QUALIFICATIONS)
-   ========================================================================== */
+/* TIMELINE */
 #experience .card-content,
 #qualifications .card-content {
     position: relative;
@@ -323,9 +313,7 @@ body {
     margin-bottom: 8px;
 }
 
-/* ==========================================================================
-   6. SKILLS SECTION
-   ========================================================================== */
+/*  SKILLS SECTION */
 .skills-grid {
     display: flex;
     gap: 30px;
@@ -340,9 +328,7 @@ body {
     padding-left: 20px;
 }
 
-/* ==========================================================================
-   7. PROJECTS SECTION
-   ========================================================================== */
+/* PROJECTS SECTION */
 #projects .item {
     display: flex;
     flex-direction: column;
@@ -391,9 +377,7 @@ body {
     margin: 0;
 }
 
-/* ==========================================================================
-   8. REFERENCES SECTION
-   ========================================================================== */
+/* REFERENCES SECTION */
 .references-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -419,11 +403,9 @@ body {
     margin-bottom: 10px;
 }
 
-/* ==========================================================================
-   (MEDIA QUERIES)
-   ========================================================================== */
+/*MEDIA QUERIES */
 
-/* 1.(1280px وأكبر) */
+/* size 1 */
 @media (min-width: 1280px) {
     .main-container {
         max-width: 1200px;
@@ -448,7 +430,7 @@ body {
     }
 }
 
-/* 2. (481px إ768 px) */
+/* size 2 */
 @media (min-width: 481px) and (max-width: 768px) {
     .main-container {
         padding: 0 15px;
@@ -529,7 +511,7 @@ body {
     }
 }
 
-/* 3. smart phone(480px) */
+/* size 3 */
 @media (max-width: 480px) {
     .main-container {
         margin: 20px auto;
@@ -601,7 +583,7 @@ body {
         gap: 10px;
     }
 
-    /* Hero Section Responsive */
+    /* Hero Section */
     .hero-wrapper {
         flex-direction: column-reverse;
         text-align: center;
