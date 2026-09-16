@@ -1,4 +1,6 @@
-/* ==================== GENERAL RESET ==================== */
+/* ==========================================================================
+   1. GENERAL RESET & BASE STYLES
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -7,22 +9,18 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: #e2e8f0; 
 }
-
-
-
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e2e8f0 !important; /* درجة رمادي رمادي واضحة جداً وتبرز البطاقات البيضاء */
+    background-color: #e2e8f0;
     color: #333333;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
-/* ====================  NAVBAR  ==================== */
+/* ==========================================================================
+   2. NAVBAR SECTION
+   ========================================================================== */
 .custom-navbar {
     width: 100%;
     padding: 12px 0;
@@ -38,12 +36,10 @@ body {
     position: relative;
 }
 
-/* مابدي المربع تاع تشيك بوكس يبين */
 .menu-toggle-checkbox {
     display: none;
 }
 
-/* إخفاء زر الهامبرغر في الشاشات العريضة/الكبيرة */
 .hamburger-icon {
     display: none;
     flex-direction: column;
@@ -80,51 +76,40 @@ body {
     color: #0056b3;
 }
 
-
-
-  /* ==========================================================================
-   Hero Section - Clean & Modern (Full Width Container & Fixed Layout)
+/* ==========================================================================
+   3. HERO SECTION
    ========================================================================== */
-
-
 .hero-full-width {
     width: 100%;
-    
-    background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%); 
+    background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
     position: relative;
-    overflow: hidden; /* يمنع السكرول الأفقي */
+    overflow: hidden;
     border-bottom: 1px solid #cbd5e1;
     margin-bottom: 40px;
 }
 
-
 .hero-container {
-    
-    min-height: 100vh; 
+    min-height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    
-   
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
 }
 
-
 .hero-wrapper {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     gap: 25px;
     width: 100%;
-    flex-wrap: nowrap !important;
+    flex-wrap: nowrap;
 }
 
-/* --- النصوص --- */
 .hero-text-content {
-    flex: 1 1 55% !important;
+    flex: 1 1 55%;
     max-width: 500px;
     z-index: 2;
     min-width: 0;
@@ -133,7 +118,7 @@ body {
 .hero-main-title {
     font-size: 2.2rem;
     font-weight: 800;
-    color: #0f172a; 
+    color: #0f172a;
     line-height: 1.25;
     margin-bottom: 16px;
     letter-spacing: -0.5px;
@@ -145,11 +130,10 @@ body {
 
 .hero-description {
     font-size: 0.95rem;
-    color: #475569; 
+    color: #475569;
     line-height: 1.6;
     margin-bottom: 25px;
 }
-
 
 .hero-btn-group {
     display: flex;
@@ -175,7 +159,7 @@ body {
 }
 
 .btn-outline-pill {
-    background-color: #ffffff; 
+    background-color: #ffffff;
     color: #1a252f;
     padding: 10px 24px;
     border-radius: 30px;
@@ -192,7 +176,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* --- جانب الصورة مع الخلفية الضوئية --- */
 .hero-visual-content {
     position: relative;
     display: flex;
@@ -208,7 +191,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 550px; /* حجم هادئ ومتناسق للشاشات العادية */
+    width: 550px;
     height: 550px;
     background: radial-gradient(circle, rgba(0, 86, 179, 0.35) 0%, rgba(255, 255, 255, 0.15) 60%, rgba(255, 255, 255, 0) 100%);
     border-radius: 50%;
@@ -225,7 +208,6 @@ body {
     width: 100%;
 }
 
-
 .hero-person-img img {
     width: 100%;
     max-width: 320px;
@@ -241,8 +223,9 @@ body {
     transform: translateY(-5px) scale(1.02);
 }
 
-
-/* ==================== CARD STYLES ==================== */
+/* ==========================================================================
+   4. MAIN CONTAINER & CARD STYLES
+   ========================================================================== */
 .main-container {
     max-width: 1200px;
     margin: 40px auto;
@@ -256,12 +239,12 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     padding: 30px;
     margin-bottom: 35px;
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
-                box-shadow 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
 }
+
 .card-box:hover {
-    transform: translateY(-8px) scale(1.015); /* يرفع البطاقة للأعلى 8px ويكبرها بنسبة بسيطة */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12); /* يوسّع الظل لإبراز الارتفاع عن الصفحة */
+    transform: translateY(-8px) scale(1.015);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
     cursor: pointer;
 }
 
@@ -273,23 +256,20 @@ body {
     padding-bottom: 8px;
 }
 
-
-
 .card-content {
     position: relative;
     padding-left: 20px;
 }
 
-/* ==================== TIMELINE (EXPERIENCE & QUALIFICATIONS) ==================== */
-
-/* إزاحة المحتوى للداخل لإعطاء مساحة للخط والنقاط */
+/* ==========================================================================
+   5. TIMELINE (EXPERIENCE & QUALIFICATIONS)
+   ========================================================================== */
 #experience .card-content,
 #qualifications .card-content {
     position: relative;
     padding-left: 25px;
 }
 
-/* رسم الخط العمودي الواصل بين التاريخين */
 #experience .card-content::before,
 #qualifications .card-content::before {
     content: '';
@@ -298,10 +278,9 @@ body {
     bottom: 20px;
     left: 4px;
     width: 2px;
-    background-color: #0056b3; /* لون الخط العمودي */
+    background-color: #0056b3;
 }
 
-/* ضبط موضع العناصر */
 #experience .item,
 #qualifications .item {
     position: relative;
@@ -313,19 +292,18 @@ body {
     margin-bottom: 0;
 }
 
-/* رسم النقاط الدائرية عند كل تاريخ */
 #experience .item::before,
 #qualifications .item::before {
     content: '';
     position: absolute;
-    left: -25px; /* يضع النقطة فوق الخط العمودي تماماً */
+    left: -25px;
     top: 6px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #0056b3; /* لون النقطة الداخلي */
-    border: 2px solid #ffffff; /* إطار أبيض لفصل النقطة عن الخلفية */
-    box-shadow: 0 0 0 2px #0056b3; /* تحديد خارجي للنقطة */
+    background-color: #0056b3;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 2px #0056b3;
     z-index: 1;
 }
 
@@ -345,7 +323,9 @@ body {
     margin-bottom: 8px;
 }
 
-/* ==================== SKILLS, PROJECTS & REFERENCES ==================== */
+/* ==========================================================================
+   6. SKILLS SECTION
+   ========================================================================== */
 .skills-grid {
     display: flex;
     gap: 30px;
@@ -360,23 +340,21 @@ body {
     padding-left: 20px;
 }
 
-
-
-/* ==================== PROJECTS SECTION ==================== */
+/* ==========================================================================
+   7. PROJECTS SECTION
+   ========================================================================== */
 #projects .item {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-    gap: 12px;             
-    border-bottom: 1px solid #0c0c0c; 
-    padding-bottom: 30px; 
-    margin-bottom: 30px;  
+    align-items: flex-start;
+    gap: 12px;
+    border-bottom: 1px solid #0c0c0c;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
-/* ==================== PROJECT IMAGE HOVER ANIMATION ==================== */
-
 .project-img-wrapper {
-    width: 100%;  
+    width: 100%;
     height: 140px;
     border-radius: 6px;
     overflow: hidden;
@@ -386,23 +364,22 @@ body {
     align-items: center;
     justify-content: center;
 }
-/* 1. إضافة انسيابية الحركة على الصورة */
+
 .project-img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     display: block;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* حركة مرنة ممتعة */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* 2. تأثير النط (القفز للأعلى) والتكبير عند التأشير على العنصر أو الصورة */
 #projects .item:hover .project-img {
-    transform: translateY(-6px) scale(1.08); /*  رفع الصورة 6px للأعلى وتكبيرها بنسبة 8% */
+    transform: translateY(-6px) scale(1.08);
 }
 
 .project-info {
     flex: 1;
-    text-align: left; 
+    text-align: left;
 }
 
 .project-info h3 {
@@ -414,9 +391,9 @@ body {
     margin: 0;
 }
 
-/* ==================== refrence section  ==================== */
-
-
+/* ==========================================================================
+   8. REFERENCES SECTION
+   ========================================================================== */
 .references-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -442,19 +419,16 @@ body {
     margin-bottom: 10px;
 }
 
-
-
-   /* ==========================================================================
-   Responsive Design (Media Queries)
+/* ==========================================================================
+   (MEDIA QUERIES)
    ========================================================================== */
 
-/* 1. الشاشات الكبيرة (1280px+) */
-@media screen and (min-width: 1280px) {
+/* 1.(1280px وأكبر) */
+@media (min-width: 1280px) {
     .main-container {
         max-width: 1200px;
     }
 
-    /* قسم البروجكت للشاشات الكبيرة */
     #projects .item {
         gap: 25px;
     }
@@ -463,27 +437,19 @@ body {
         flex: 0 0 220px;
         height: 150px;
     }
-}
 
-/* 2. اللابتوبات والأجهزة العريضة (769px إلى 1279px) */
-@media screen and (min-width: 769px) and (max-width: 1279px) {
-    .main-container {
-        max-width: 90%;
-    }
-    
-    .references-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .glow-backdrop {
+        width: 700px;
+        height: 700px;
     }
 
-    /* قسم البروجكت للشاشات المتوسطة (يبقى أفقياً بشكل مريح) */
-    .project-img-wrapper {
-        flex: 0 0 180px;
-        height: 130px;
+    .hero-person-img img {
+        max-width: 350px;
     }
 }
 
-/* 3. الأجهزة اللوحية والهواتف الكبيرة (481px إلى 768px) */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+/* 2. (481px إ768 px) */
+@media (min-width: 481px) and (max-width: 768px) {
     .main-container {
         padding: 0 15px;
     }
@@ -514,12 +480,9 @@ body {
     }
 
     .skills-grid {
-        display: flex;
-        flex-direction: row;
         gap: 15px;
     }
 
-    /* قسم البروجكت للتابلت (تحويل لعمودي ليتناسب مع المساحة) */
     #projects .item {
         flex-direction: column;
         align-items: flex-start;
@@ -530,18 +493,44 @@ body {
         width: 100%;
         flex: none;
         max-width: 100%;
-        height: 200px; /* ارتفاع ممتاز لصور التابلت */
+        height: 200px;
     }
 
     .references-grid {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+    }
+
+    /* Hero Section  */
+    .hero-wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .hero-text-content {
+        max-width: 100%;
+    }
+
+    .hero-main-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-btn-group {
+        justify-content: center;
+    }
+
+    .glow-backdrop {
+        width: 380px;
+        height: 380px;
+    }
+
+    .hero-person-img img {
+        max-width: 240px;
     }
 }
 
-/* 4. الهواتف الذكية الصغيرة (0px إلى 480px) */
-@media screen and (max-width: 480px) {
+/* 3. smart phone(480px) */
+@media (max-width: 480px) {
     .main-container {
         margin: 20px auto;
         padding: 0 10px;
@@ -581,21 +570,19 @@ body {
     }
 
     .skills-grid {
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 10px;
     }
 
     .skills-category ul {
         padding-left: 15px;
-        word-break: break-word;
+        
     }
 
     .skills-category li {
         font-size: 0.85rem;
     }
 
-    /* قسم البروجكت للهواتف الصغيرة */
     #projects .item {
         flex-direction: column;
         align-items: flex-start;
@@ -606,88 +593,17 @@ body {
         width: 100%;
         flex: none;
         max-width: 100%;
-        height: 160px; /* ارتفاع متناسق مع شاشات الموبايل الصغيرة */
+        height: 160px;
     }
 
     .references-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    .references-grid .item {
-        font-size: 0.85rem;
-        word-break: break-word;
-    }
-}
-
-/* ==========================================================================
-   Hero Responsive Design
-   ========================================================================== */
-
-
-/* 1. الشاشات الكبيرة جداً (1280px+) */
-@media (min-width: 1280px) {
-    .glow-backdrop {
-        width: 700px;
-        height: 700px;
-    }
-    .hero-person-img img {
-        max-width: 350px;
-    }
-}
-
-/* 2. اللابتوبات والشاشات المتوسطة (769px إلى 1279px) 👈 هاد السكشن كان ناقص وهو سبب المشكلة */
-@media (min-width: 769px) and (max-width: 1279px) {
-    .glow-backdrop {
-        width: 500px;
-        height: 500px;
-    }
-    .hero-person-img img {
-        max-width: 280px;
-    }
-}
-
-/* 3. الأجهزة اللوحية (481px إلى 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
+    /* Hero Section Responsive */
     .hero-wrapper {
-        flex-direction: column-reverse !important;
-        text-align: center;
-        gap: 25px;
-    }
-
-    .hero-text-content {
-        max-width: 100%;
-    }
-
-    .hero-main-title {
-        font-size: 1.8rem;
-    }
-
-    .hero-btn-group {
-        justify-content: center;
-    }
-
-    .hero-visual-content {
-        min-height: auto;
-    }
-
-    .glow-backdrop {
-        width: 380px;
-        height: 380px;
-    }
-
-    .hero-person-img img {
-        max-width: 240px;
-    }
-
-    
-}
-
-/* 4. الهواتف الذكية (أقل من 480px) */
-@media (max-width: 480px) {
-    .hero-wrapper {
-        flex-direction: column-reverse !important;
+        flex-direction: column-reverse;
         text-align: center;
         gap: 20px;
     }
@@ -705,18 +621,12 @@ body {
         flex-wrap: wrap;
     }
 
-    .hero-visual-content {
-        min-height: auto;
-    }
-
     .glow-backdrop {
         width: 280px;
         height: 280px;
     }
 
     .hero-person-img img {
-        max-width: 190px; /* تصغير الصورة لتطابق الهالة تماماً */
+        max-width: 190px;
     }
-
-   
 }
