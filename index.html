@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Portfolio</title>
-    
-    
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- NAVBAR -->
     <nav class="custom-navbar bg-dark sticky-top">
         <div class="nav-container">
-      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-white" href="#">
-       <span>Saja Diabat</span>
-      </a>
-            
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-white" href="#">
+                <span class="name">Saja Diabat</span>
+            </a>
+
             <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
-            
+
             <!-- burger -->
             <label for="menu-toggle" class="hamburger-icon">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
-            
-            
+
+
             <div class="nav-links-wrapper">
                 <ul class="custom-nav-links">
                     <li><a href="#about">About Me</a></li>
@@ -44,195 +47,211 @@
         </div>
     </nav>
 
-  
-<section id="hero" class="hero-full-width">
-    <div class="hero-container">
-        <div class="hero-wrapper">
-            
-            <div class="hero-text-content">
-                <h1 class="hero-main-title">
-                    Turning ideas into <span class="highlight">Digital Experience</span>
-                </h1>
-                <p class="hero-description">
-                    I’m a Business Information Technology graduate with a passion for web development.
-                    I enjoy learning, building, and turning ideas into simple and useful digital experiences.
-                </p>
-                <div class="hero-btn-group">
-                    <a href="#contact" class="btn-primary-pill">Let's Talk</a>
-                    <a href="#projects" class="btn-outline-pill">View my work</a>
-                    <a href="Saja.Diabat_CV2.pdf" class="btn-outline-pill">CV</a>   
-                 </div>
-            </div>
 
-            
-            <div class="hero-visual-content">
-                <div class="glow-backdrop"></div>
-                <div class="hero-person-img">
-                    <img src="saja-removebg-preview.png" alt="Saja Diabat">
+    <section id="hero" class="hero-full-width">
+        <div class="hero-container">
+            <div class="hero-wrapper">
+
+                <div class="hero-text-content">
+                    <h1 class="hero-main-title">
+                        Turning ideas into <span class="highlight">Digital Experience</span>
+                    </h1>
+                    <p class="hero-description">
+                        I’m a Business Information Technology graduate with a passion for web development.
+                        I enjoy learning, building, and turning ideas into simple and useful digital experiences.
+                    </p>
+                    <div class="hero-btn-group">
+                        <a href="#contact" class="btn-primary-pill">Let's Talk</a>
+                        <a href="#projects" class="btn-outline-pill">View my work</a>
+                        <a href="images/saja-removebg-preview.png" class="btn-outline-pill">CV</a>
+                    </div>
                 </div>
-                
+
+
+                <div class="hero-visual-content">
+                    <div class="glow-backdrop"></div>
+                    <div class="hero-person-img">
+
+                         <img src="images/saja-removebg-preview.png"
+                                alt="Saja Diabat"> 
+
+                    </div>
+
+                </div>
+
             </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
 
-   
+
     <main class="main-container">
 
-<!--  ABOUT ME -->
+        <!--  ABOUT ME -->
         <section id="about" class="card-box">
             <h2 class="card-title">About Me</h2>
-            <div class="card-content">
-                <p>Motivated and passionate aspiring Full Stack Developer currently developing my 
+            <div class="card-content ACard">
+                
+                <div><p>Motivated and passionate aspiring Full Stack Developer currently developing my
                     skills through hands-on learning and practical projects. I enjoy building responsive
-                     and user-friendly web applications and continuously improving my knowledge of front-end 
-                     and back-end technologies. I am eager to learn, take on new challenges, and grow as a developer
-                      while contributing to a collaborative team.</p>
+                    and user-friendly web applications and continuously improving my knowledge of front-end
+                    and back-end technologies. I am eager to learn, take on new challenges, and grow as a developer
+                    while contributing to a collaborative team.
+                </p></div>
+                <div > 
+                    <img src="images/code.webp">
+                </div>
             </div>
         </section>
 
-       
- <!--  EXPERIENCE -->
-      <section id="experience" class="card-box">
-      <h2 class="card-title">Experience</h2>
-      <div class="card-content">
-        
-       
-        <div class="item">
-            <h3>Customer Service Representative, Aramex Company, Amman</h3>
-            <span class="date">Feb 2026 - Jun 2026</span>
-            <p> Responded to customer calls and emails promptly, providing accurate information and a positive customer experience.</p>
-        </div>
 
-        
-        <div class="item">
-            <h3>Business Information Technology Intern, PBI Aqaba</h3>
-            <span class="date"> Oct 2024 - Jan 2025</span>
-            <p>Prepared and organized reports using MS Office applications, ensuring accuracy and clarity for effective internal use.</p>
-        </div>
-</section>
+        <!--  EXPERIENCE -->
+        <section id="experience" class="card-box">
+            <h2 class="card-title">Experience</h2>
+            <div class="card-content">
 
 
- <!--CERTIFICATES -->
-<section id="qualifications" class="card-box">
-    <h2 class="card-title">Certificates & Qualifications</h2>
-    <div class="card-content">
-        
-       
-        <div class="item">
-            <h3>Full Stack Developer</h3>
-            <span class="date">Sep 2026 - Present</span>
-            <p>learning and developing full-stack web development skills through practical projects and hands-on training. Building knowledge in HTML, CSS, JavaScript, React, Node.js, databases, and REST APIs, while practicing front-end and back-end development, responsive design, Git/GitHub, and debugging.</p>
-            </p>
-        </div>
+                <div class="item">
+                    <h3>Customer Service Representative, Aramex Company, Amman</h3>
+                    <span class="date">Feb 2026 - Jun 2026</span>
+                    <p> Responded to customer calls and emails promptly, providing accurate information and a positive
+                        customer experience.</p>
+                </div>
 
-       
-        <div class="item">
-            <h3>Bachelor’s Degree in Business Information Technology  </h3>
-            <span class="date">Aug 2025</span>
-            <p> University Degree with focus on Data Structures, Algorithms, Software Engineering, and Database Management Systems .</p>
-        </div>
 
-    </div>
-</section>
-<!-- SKILLS  -->
-        
-<section id="skills" class="card-box">
-    <h2 class="card-title">Skills & Soft Skills</h2>
-    <div class="card-content skills-grid">
-        <div class="skills-category">
-            <h3>Technical Skills</h3>
-            <ul>
-                <li><i class="fa-brands fa-html5"></i> HTML5 & CSS3 (Flexbox, CSS Grid)</li>
-                <li><i class="fa-solid fa-mobile-screen-button"></i> Media Queries & Responsive Design</li>
-                <li><i class="fa-brands fa-js"></i> JavaScript (ES6+)</li>
-                <li><i class="fa-brands fa-github"></i> Git & GitHub Version Control</li>
-            </ul>
-        </div>
-        <div class="skills-category">
-            <h3>Soft Skills</h3>
-            <ul>
-                <li><i class="fa-solid fa-brain"></i> Problem Solving & Analytical Thinking</li>
-                <li><i class="fa-solid fa-comments"></i> Effective Communication</li>
-                <li><i class="fa-solid fa-clock"></i> Time Management</li>
-                <li><i class="fa-solid fa-arrows-spin"></i> Adaptability & Continuous Learning</li>
-            </ul>
-        </div>
-    </div>
-</section>
+                <div class="item">
+                    <h3>Business Information Technology Intern, PBI Aqaba</h3>
+                    <span class="date"> Oct 2024 - Jan 2025</span>
+                    <p>Prepared and organized reports using MS Office applications, ensuring accuracy and clarity for
+                        effective internal use.</p>
+                </div>
+        </section>
 
- <!-- PROJECTS  -->
-<section id="projects" class="card-box">
-    <h2 class="card-title">Projects</h2>
-    <div class="card-content">
-        
-        
-        <div class="item">
-            <div class="project-img-wrapper">
-                <img src="gradproject.jpeg" alt="E-Commerce Platform" class="project-img">
+
+        <!--CERTIFICATES -->
+        <section id="qualifications" class="card-box">
+            <h2 class="card-title">Certificates & Qualifications</h2>
+            <div class="card-content">
+
+
+                <div class="item">
+                    <h3>Full Stack Developer</h3>
+                    <span class="date">Sep 2026 - Present</span>
+                    <p>learning and developing full-stack web development skills through practical projects and hands-on
+                        training. Building knowledge in HTML, CSS, JavaScript, React, Node.js, databases, and REST APIs,
+                        while practicing front-end and back-end development, responsive design, Git/GitHub, and
+                        debugging.</p>
+                    </p>
+                </div>
+
+
+                <div class="item">
+                    <h3>Bachelor’s Degree in Business Information Technology </h3>
+                    <span class="date">Aug 2025</span>
+                    <p> University Degree with focus on Data Structures, Algorithms, Software Engineering, and Database
+                        Management Systems .</p>
+                </div>
+
             </div>
-            <div class="project-info">
-                <h3>Link core</h3>
-                <p>A web-based B2B platform designed to connect factories and traders in Jordan directly, without intermediaries.</p>
-            </div>
-        </div>
+        </section>
+        <!-- SKILLS  -->
 
-        
-        <div class="item">
-            <div class="project-img-wrapper">
-                <img src="portfolioscreen.png" alt="Personal Portfolio" class="project-img">
+        <section id="skills" class="card-box">
+            <h2 class="card-title">Skills & Soft Skills</h2>
+            <div class="card-content skills-grid">
+                <div class="skills-category">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i> HTML5 & CSS3 (Flexbox, CSS Grid)</li>
+                        <li><i class="fa-solid fa-mobile-screen-button"></i> Media Queries & Responsive Design</li>
+                        <li><i class="fa-brands fa-js"></i> JavaScript (ES6+)</li>
+                        <li><i class="fa-brands fa-github"></i> Git & GitHub Version Control</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-brain"></i> Problem Solving & Analytical Thinking</li>
+                        <li><i class="fa-solid fa-comments"></i> Effective Communication</li>
+                        <li><i class="fa-solid fa-clock"></i> Time Management</li>
+                        <li><i class="fa-solid fa-arrows-spin"></i> Adaptability & Continuous Learning</li>
+                    </ul>
+                </div>
             </div>
-            <div class="project-info">
-                <h3>Personal Portfolio Website</h3>
-                <p>A modern personal website showcasing experience, skills, and qualifications using a card-box layout with full multi-device responsiveness and custom styling.</p>
-                <a href="https://github.com/sajadiabat9-ui/project1.git">my Portfolio</a>
+        </section>
+
+        <!-- PROJECTS  -->
+        <section id="projects" class="card-box">
+            <h2 class="card-title">Projects</h2>
+            <div class="card-content PCard">
+
+
+                <div class="item">
+                    <div class="project-img-wrapper">
+                        <img src="images/gradproject.jpeg" alt="E-Commerce Platform" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Link core</h3>
+                        <p>A web-based B2B platform designed to connect factories and traders in Jordan directly,
+                            without intermediaries.</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="project-img-wrapper">
+                        <img src="images/portfolioscreen.png" alt="Personal Portfolio" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A modern personal website showcasing experience, skills, and qualifications using a card-box
+                            layout with full multi-device responsiveness and custom styling.</p>
+                        <a href="https://github.com/sajadiabat9-ui/project1.git">my Portfolio</a>
+                    </div>
+                </div>
+
+
+
+
             </div>
-        </div>
-
-        
-        <div class="item">
-            <div class="project-img-wrapper">
-                <img src="photo.png" alt="Admin Dashboard" class="project-img">
-            </div>
-            <div class="project-info">
-                <h3>up coming</h3>
-                <p>up coming</p>
-            </div>
-        </div>
-
-    </div>
-</section>
+        </section>
 
 
-<!--  REFERENCES -->
+        <!--  REFERENCES -->
         <section id="references" class="card-box">
             <h2 class="card-title">References</h2>
             <div class="card-content references-grid">
-                
-                
+
+
                 <div class="reference-card">
                     <h3>Mohammed Frehat</h3>
                     <p class="ref-title">Coding Academy Manager</p>
-                    <p class="ref-contact">LinkedIn: Mohammed Frehat | Phone: +962 776808599</p>
-                    
+                    <p class="ref-contact"><i class="bi bi-linkedin"></i>LinkedIn: Mohammed Frehat<br>
+                        <i class="bi bi-telephone-fill"></i> Phone: +962 776808599<br>
+                        <i class="bi bi-envelope-fill"></i> Email: mfre7at@yahoo.com
+                    </p>
+
                 </div>
 
-                
+
                 <div class="reference-card">
                     <h3>Anfal Dherat</h3>
                     <p class="ref-title">Lead Trainer Orange Coding Academy</p>
-                    <p class="ref-contact">linkedin: Anfal Dherat | Phone: +962 771635405</p>
-                    
+                    <p class="ref-contact"><i class="bi bi-linkedin"></i>Linkedin: Anfal Dherat <br>
+                        <i class="bi bi-telephone-fill"></i> Phone: +962 771635405<br>
+                        <i class="bi bi-envelope-fill"></i> Email: gt.anfal.daharat@orange.com
+                    </p>
+
                 </div>
 
-                
+
                 <div class="reference-card">
                     <h3>Batool Al-dalki </h3>
                     <p class="ref-title">Lead Trainer Orange Coding Academy</p>
-                    <p class="ref-contact">LinkedIn: Batool Walid| Phone: +962 776800915</p>
-                    
+                    <p class="ref-contact"><i class="bi bi-linkedin"></i>LinkedIn: Batool Walid<br>
+                        <i class="bi bi-telephone-fill"></i> Phone: +962 776800915<br>
+                        <i class="bi bi-envelope-fill"></i> Email: gt.batool.aldalki@orange.com
+                    </p>
                 </div>
 
             </div>
@@ -242,28 +261,31 @@
 
     <!--  FOOTER -->
     <footer id="contact" class="bg-dark text-white text-center py-1 custom-compact-footer">
-    <div class="container">
-        
-        <h6 class="mb-1 fw-bold style-title">Contact Information</h6>
-        <div class="d-flex justify-content-center align-items-center flex-wrap gap-1 mb-1 contact-text">
-            <span>Email: Sajadiabat9@gmail.com</span>
-            <span class="text-secondary opacity-50">|</span>
-            <span>Phone: +962 782276523</span>
-            <span class="text-secondary opacity-50">|</span>
-            <span>Location: Irbid, Jordan</span>
-        </div>
+        <div class="container">
 
-        
-        <div class="footer-links mb-1 contact-text">
-            <a href="https://github.com/sajadiabat9-ui" target="_blank" class="text-white text-decoration-none mx-1">GitHub</a>
-            <span class="text-secondary opacity-50">|</span>
-            <a href="https://www.linkedin.com/in/saja-diabat-585943380/" target="_blank" class="text-white text-decoration-none mx-1">LinkedIn</a>
-        </div>
+            <h6 class="mb-1 fw-bold style-title">Contact Information</h6>
+            <div class="d-flex justify-content-center align-items-center flex-wrap gap-1 mb-1 contact-text">
+                <span>Email: Sajadiabat9@gmail.com</span>
+                <span class="text-secondary opacity-50">|</span>
+                <span>Phone: +962 782276523</span>
+                <span class="text-secondary opacity-50">|</span>
+                <span>Location: Irbid, Jordan</span>
+            </div>
 
-        <hr class="my-1 border-secondary w-25 mx-auto opacity-25">
-        <small class="text-secondary d-block copyright-text">&copy; 2026 All Rights Reserved.</small>
-    </div>
-</footer>
-    
+
+            <div class="footer-links mb-1 contact-text">
+                <a href="https://github.com/sajadiabat9-ui" target="_blank"
+                    class="text-white text-decoration-none mx-1">GitHub</a>
+                <span class="text-secondary opacity-50">|</span>
+                <a href="https://www.linkedin.com/in/saja-diabat-585943380/" target="_blank"
+                    class="text-white text-decoration-none mx-1">LinkedIn</a>
+            </div>
+
+            <hr class="my-1 border-secondary w-25 mx-auto opacity-25">
+            <small class="text-secondary d-block copyright-text">&copy; 2026 All Rights Reserved.</small>
+        </div>
+    </footer>
+
 </body>
+
 </html>
